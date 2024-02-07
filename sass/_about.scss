@@ -3,6 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(2, min-content);
+    grid-column: full-start / full-end;
+
 
     @media only screen and (max-width:$bp-large){
        grid-template-columns: 1fr;

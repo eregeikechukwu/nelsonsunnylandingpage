@@ -3,6 +3,8 @@
     grid-template-columns: repeat(4, 25vw);
     width: 110%;
     margin-top: -4px;
+    grid-column: full-start / full-end;
+    margin-right:-22rem;
 
     @media only screen and (max-width:$bp-large){
        grid-template-columns: repeat(2, 50vw);

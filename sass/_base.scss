@@ -11,10 +11,9 @@ p, section {
     padding: 0;
 }
 html{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-size: 112.5%;//18px
+    overflow-x: hidden;
 
     @media only screen and (max-width:$bp-large){
         font-size: 90%;
@@ -24,13 +23,20 @@ html{
 body{
     margin: 0;
     padding: 0;
+    display: inline;
     box-sizing: border-box;
     font-family: $font-family2;
     position: relative;
+    scroll-behavior: smooth;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
 .main{
+    grid-template-columns: [full-start] minmax(min-content, 1fr) [full-start];
     grid-template-rows:  repeat(auto-fit, min-content);
     display: grid;
+    overflow-x: hidden;
 }

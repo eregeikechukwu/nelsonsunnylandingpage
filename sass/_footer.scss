@@ -6,6 +6,8 @@
     height: 42vh;
     flex-direction: column;
     margin-top: -4px; 
+    grid-column: full-start / full-end;
+
 
     
     @media only screen and (max-width:$bp-large){

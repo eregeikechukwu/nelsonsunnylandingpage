@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(2, min-content);
+  grid-column: full-start/full-end;
 }
 @media only screen and (max-width: 62.5em) {
   .about {
@@ -70,10 +71,9 @@ p, section {
 }
 
 html {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
   font-size: 112.5%;
+  overflow-x: hidden;
 }
 @media only screen and (max-width: 62.5em) {
   html {
@@ -84,14 +84,20 @@ html {
 body {
   margin: 0;
   padding: 0;
+  display: inline;
   box-sizing: border-box;
   font-family: "Barlow", sans-serif;
   position: relative;
+  scroll-behavior: smooth;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main {
+  grid-template-columns: [full-start] minmax(min-content, 1fr) [full-start];
   grid-template-rows: repeat(auto-fit, min-content);
   display: grid;
+  overflow-x: hidden;
 }
 
 .footer {
@@ -102,6 +108,7 @@ body {
   height: 42vh;
   flex-direction: column;
   margin-top: -4px;
+  grid-column: full-start/full-end;
 }
 @media only screen and (max-width: 62.5em) {
   .footer {
@@ -164,6 +171,7 @@ body {
   justify-content: space-between;
   font-size: 0.7rem;
   align-items: center;
+  grid-column: full-start/full-end;
 }
 @media only screen and (max-width: 62.5em) {
   .nav__list {
@@ -271,6 +279,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: -5px;
+  grid-column: full-start/full-end;
 }
 @media only screen and (max-width: 62.5em) {
   .projects {
@@ -333,6 +342,8 @@ body {
   grid-template-columns: repeat(4, 25vw);
   width: 110%;
   margin-top: -4px;
+  grid-column: full-start/full-end;
+  margin-right: -22rem;
 }
 @media only screen and (max-width: 62.5em) {
   .services {
@@ -400,6 +411,7 @@ body {
 .testimonies {
   text-align: center;
   padding: 6.6rem 6rem;
+  grid-column: full-start/full-end;
 }
 
 .stories {

@@ -26,6 +26,8 @@
         justify-content: space-between;
         font-size: .7rem;
         align-items: center;
+        grid-column: full-start / full-end;
+
 
         @media only screen and (max-width:$bp-large){
             display: none;
