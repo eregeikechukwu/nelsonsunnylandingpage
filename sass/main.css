@@ -235,6 +235,7 @@ body {
 .arrow {
   transform: scale(0.8);
   color: white;
+  margin-top: -24%;
   animation: arrowmove 6s 2s infinite;
 }
 @media only screen and (max-width: 62.5em) {
