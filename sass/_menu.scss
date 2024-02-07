@@ -9,9 +9,12 @@
     }
 
     &__button {
-        margin-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
         cursor: pointer;
-       // position: absolute;
+       //position: absolute;
     }
 
     &__background {
@@ -29,7 +32,7 @@
         align-items:center;
 
         @media only screen and (max-width:$bp-large){
-            height: 50%;
+            height: 40%;
             top:10%;
         } 
 

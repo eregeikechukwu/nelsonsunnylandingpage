@@ -460,7 +460,10 @@ body {
   display: none;
 }
 .menu__button {
-  margin-right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
   cursor: pointer;
 }
 .menu__background {
@@ -478,7 +481,7 @@ body {
 }
 @media only screen and (max-width: 62.5em) {
   .menu__background {
-    height: 50%;
+    height: 40%;
     top: 10%;
   }
 }
