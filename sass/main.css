@@ -227,7 +227,7 @@ body {
 }
 @media only screen and (max-width: 62.5em) {
   .title {
-    margin-top: 40%;
+    margin-top: 30%;
     font-size: 4rem;
   }
 }
@@ -235,17 +235,16 @@ body {
 .arrow {
   transform: scale(0.8);
   color: white;
-  margin-top: -24%;
   animation: arrowmove 6s 2s infinite;
 }
 @media only screen and (max-width: 62.5em) {
   .arrow {
-    margin-top: -40%;
+    margin-top: -30%;
   }
 }
 @media only screen and (max-width: 37.5em) {
   .arrow {
-    margin-top: 40%;
+    margin-top: -30%;
   }
 }
 
@@ -463,7 +462,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
   cursor: pointer;
 }
 .menu__background {

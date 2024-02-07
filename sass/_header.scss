@@ -89,7 +89,7 @@
     letter-spacing: .35rem;
 
     @media only screen and (max-width:$bp-large){
-        margin-top: 40%;
+        margin-top: 30%;
         font-size: 4rem;
     } 
 
@@ -98,15 +98,15 @@
 .arrow{
     transform: scale(.8);
     color: white;
-    margin-top:-24% ;  
+  //  margin-top:-94% ;  
     animation: arrowmove 6s  2s infinite;
 
     @media only screen and (max-width:$bp-large){
-        margin-top: -40%;
+        margin-top: -30%;
     } 
 
     @media only screen and (max-width:$bp-small){
-        margin-top: 40%;
+        margin-top: -30%;
     } 
 }
 
