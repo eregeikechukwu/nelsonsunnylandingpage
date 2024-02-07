@@ -1,0 +1,49 @@
+.footer{
+    background-color: $moderate-cyan ;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 42vh;
+    flex-direction: column;
+    margin-top: -4px; 
+
+    
+    @media only screen and (max-width:$bp-large){
+        height: 30vh;
+      } 
+    &__logo{
+        scale: .7;
+        margin-bottom: 2rem;
+    }
+
+    &__items{
+        font-size: .7rem;
+        margin-bottom: 2.9rem;
+        font-weight: 600;
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        grid-gap: 2rem;
+        cursor: pointer;
+
+        p,:link,:visited{
+            color: $dark-moderate-cyan;
+            text-decoration: none !important; 
+            transition: all .5s;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+
+    &__icons{
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+        grid-gap: 1.3rem;
+        fill: $moderate-cyan;
+
+        &__icon{
+             scale: .7;
+            cursor: pointer;
+        }
+    }
+}
