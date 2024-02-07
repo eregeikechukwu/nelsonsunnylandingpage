@@ -331,7 +331,7 @@ body {
 .services {
   display: grid;
   grid-template-columns: repeat(4, 25vw);
-  width: 100%;
+  width: 110%;
   margin-top: -4px;
 }
 @media only screen and (max-width: 62.5em) {
